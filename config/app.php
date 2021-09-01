@@ -175,6 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // Paypal Provider
+        leifermendez\paypal\ProviderPaypalSubscription::class,
+
     ],
 
     /*
@@ -228,6 +231,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        // Paypal 
+        'PapyalSubscription'  => leifermendez\paypal\PaypalSubscriptionFacade::class,
 
     ],
 

@@ -1,7 +1,7 @@
-@extends('app')
+@extends('dashboard')
 
 @section('content')
-<main class="signup-form">
+<main class="signup-form mt-5">
     <div class="cotainer">
         <div class="row justify-content-center">
             <div class="col-md-4">

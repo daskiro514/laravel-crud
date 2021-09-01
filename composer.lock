@@ -4,8 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cadd819a6415b190ae2704ced6e6c8b",
+    "content-hash": "3d4604459fad798a39630e9de23f6102",
     "packages": [
+        {
+            "name": "anlutro/curl",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anlutro/php-curl.git",
+                "reference": "836c7f79ffe972563cf5e55dafe08eace61454f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anlutro/php-curl/zipball/836c7f79ffe972563cf5e55dafe08eace61454f2",
+                "reference": "836c7f79ffe972563cf5e55dafe08eace61454f2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "anlutro\\cURL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Lutro",
+                    "email": "anlutro@gmail.com"
+                }
+            ],
+            "description": "Simple OOP cURL wrapper.",
+            "support": {
+                "issues": "https://github.com/anlutro/php-curl/issues",
+                "source": "https://github.com/anlutro/php-curl/tree/1.5.1"
+            },
+            "time": "2021-06-14T19:30:35+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.3",
@@ -1352,6 +1396,57 @@
                 }
             ],
             "time": "2021-01-18T20:58:21+00:00"
+        },
+        {
+            "name": "leifermendez/laravel-paypal-subscription",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leifermendez/laravel-paypal-subscription.git",
+                "reference": "d1f7168d1a5de16bebf49401be9ea3e14310f76d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leifermendez/laravel-paypal-subscription/zipball/d1f7168d1a5de16bebf49401be9ea3e14310f76d",
+                "reference": "d1f7168d1a5de16bebf49401be9ea3e14310f76d",
+                "shasum": ""
+            },
+            "require": {
+                "anlutro/curl": "^1.4",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "\\leifermendez\\paypal\\ProviderPaypalSubscription"
+                    ],
+                    "aliases": {
+                        "PapyalSubscription": "\\leifermendez\\paypal\\PapyalSubscriptionFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "leifermendez\\paypal\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Leifer Mendez",
+                    "email": "leifer33@gmail.com"
+                }
+            ],
+            "description": "Plugin especial para laravel el cual permite de forma facil el cobro de subscripcion con PAYPAL",
+            "support": {
+                "issues": "https://github.com/leifermendez/laravel-paypal-subscription/issues",
+                "source": "https://github.com/leifermendez/laravel-paypal-subscription/tree/v1.0.4"
+            },
+            "time": "2021-02-18T16:27:20+00:00"
         },
         {
             "name": "monolog/monolog",

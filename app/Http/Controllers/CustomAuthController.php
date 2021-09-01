@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Auth;
 
 class CustomAuthController extends Controller
 {
-
     public function index()
     {
         return view('auth.login');
@@ -69,7 +68,7 @@ class CustomAuthController extends Controller
     public function dashboard()
     {
         if (Auth::check()) {
-            return view('dashboard');
+            return view('components.products');
         }
 
         return redirect("login")->withSuccess('You are not allowed to access');
