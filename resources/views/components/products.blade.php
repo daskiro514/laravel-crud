@@ -3,7 +3,6 @@
 @section('content')
     <br>
     <div class="row">
-        {{-- <?php dd($products); ?> --}}
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header text-center">
