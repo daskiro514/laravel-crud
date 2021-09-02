@@ -11,6 +11,7 @@ class PaypalController extends Controller
 {
     public function __construct()
     {
+        dd(env('PAYPAL_APP_ID'));
         // $this->app_id = env('PAYPAL_APP_ID');
         // $this->app_sk = env('PAYPAL_APP_SK');
         // $this->mode = env('PAYPAL_APP_MODE');
