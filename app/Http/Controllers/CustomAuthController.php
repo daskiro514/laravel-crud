@@ -67,7 +67,7 @@ class CustomAuthController extends Controller
     public function dashboard()
     {
         if (Auth::check()) {
-            return view('components.products');
+            return redirect("products");
         }
 
         return redirect("login")->withSuccess('You are not allowed to access');
