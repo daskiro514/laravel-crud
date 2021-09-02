@@ -11,10 +11,10 @@ class PaypalController extends Controller
 {
     public function __construct()
     {
-        // $this->app_id = env('PAYPAL_APP_ID');
-        // $this->app_sk = env('PAYPAL_APP_SK');
-        // $this->mode = env('PAYPAL_APP_MODE');
-        // $this->paypalSubscription = new PaypalSubscription($this->app_id, $this->app_sk, $this->mode);
+        $this->app_id = env('PAYPAL_APP_ID');
+        $this->app_sk = env('PAYPAL_APP_SK');
+        $this->mode = env('PAYPAL_APP_MODE');
+        $this->paypalSubscription = new PaypalSubscription($this->app_id, $this->app_sk, $this->mode);
     }
 
     public function index()
@@ -24,10 +24,9 @@ class PaypalController extends Controller
 
     public function products()
     {
-        // $response = $this->paypalSubscription::getProduct();
-        // $products = $response['products'];
-        // return view('components.products')->with('products', $products);
-        return view('components.products');
+        $response = $this->paypalSubscription::getProduct();
+        $products = $response['products'];
+        return view('components.products')->with('products', $products);
     }
 
     public function createProduct(Request $request)

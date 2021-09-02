@@ -77,7 +77,7 @@
         </div>
     </div>
     <br>
-    {{-- <div class="row">
+    <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
@@ -112,7 +112,7 @@
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
     <script>
         function setProductForUpdate(product) {
             $('#update #productID').val(product.id)
