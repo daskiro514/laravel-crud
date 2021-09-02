@@ -25,5 +25,7 @@ Route::post('custom-registration', [CustomAuthController::class, 'customRegistra
 Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
 
 Route::get('products', [PaypalController::class, 'products'])->name('products');
+Route::post('product-create', [PaypalController::class, 'createProduct'])->name('product.create');
+Route::post('product-update', [PaypalController::class, 'updateProduct'])->name('product.update');
 Route::get('plans', [PaypalController::class, 'plans'])->name('plans');
 Route::get('subscriptions', [PaypalController::class, 'subscriptions'])->name('subscriptions');
